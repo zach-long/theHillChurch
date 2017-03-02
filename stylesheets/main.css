@@ -1,3 +1,54 @@
+/* import font */
+@font-face {
+  font-family: "Mohave";
+  src: url(../resources/fonts/Mohave.otf) format("opentype");
+}
+
+/* typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Mohave", sans-serif;
+}
+
+nav a {
+  font-family: "Mohave", sans-serif;
+  font-size: 2em;
+}
+
+/* page colors */
+body {
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+}
+
+.content-inner {
+  background-color: #7A7A7A;
+}
+
+/* override bootstrap navbar values */
+.navbar {
+  border: none;
+  border-radius: 0;
+}
+
+.navbar-default {
+  background-color: initial;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #FFFFFF;
+  transition: color 150ms;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #F79520;
+}
+
+/* eliminate unwanted padding on the side */
+section.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /* class for specific parameters for the header logo */
 .main-logo {
   height: 20em;
@@ -8,4 +59,32 @@
    so that image will resize more clearly from parent */
 .img-responsive {
   height: 100%;
+}
+
+/*****************************************
+  Temporary placeholder style for embed
+*****************************************/
+.embed-responsive {
+  margin: 0;
+  padding: 0;
+  max-height: 25em;
+  height: 25em;
+  min-height: 25em;
+  min-width: 100%;
+  background-color: #ccc;
+}
+
+.embed-responsive-item {
+  margin: 0;
+  padding: 0;
+  max-height: 25em;
+  height: 25em;
+  min-height: 25em;
+  min-width: 100%;
+  background-color: #ccc;
+}
+
+/* footer */
+footer {
+  height: 10em;
 }
