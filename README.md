@@ -4,5 +4,8 @@ This is the code repository for the landing page promoting the rebranding of and
 ---
 
 ## Tasklist
-- [ ] Upload banner media
+- [x] Upload banner media
 - [ ] Get favicon
+- [ ] Link Google Maps API
+- [ ] Fix STUPID WHITESPACE ON RIGHT HAND SIDE
+- [ ] Correct mobile optimization issues
