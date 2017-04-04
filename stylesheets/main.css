@@ -13,6 +13,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Mohave", sans-serif;
 }
 
+body p {
+  font-size: 1.1em;
+}
+
 nav a {
   font-family: "Mohave", sans-serif;
   font-size: 2em;
@@ -83,7 +87,7 @@ section.container-fluid {
 }
 
 .content-inner {
-  padding: 1em .2em;
+  padding: 1em 4em;
 }
 
 /* desktop view */
