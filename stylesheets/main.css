@@ -24,6 +24,11 @@ p {
   font-size: 1.1em;
 }
 
+address {
+  font-family: "Late", sans-serif;
+  font-size: 1.1em;
+}
+
 nav a {
   font-family: "Mohave", sans-serif;
   font-size: 2em;
@@ -101,6 +106,16 @@ section .row {
   padding: 1em 4em;
 }
 
+/* map */
+#map {
+  height: 25em;
+}
+
+#map iframe {
+  height: 100%;
+  width: 100%;
+}
+
 /* desktop view */
 @media (min-width: 1024px) {
   .banner-image-wrap {
@@ -126,9 +141,18 @@ section .row {
   .content-inner a {
     color: #F79520;
   }
+
+  #map {
+    height: 40em;
+  }
 }
 
 /* footer */
 footer {
   height: 10em;
+}
+
+/* interactive stuff */
+.glued {
+  position: fixed;
 }
