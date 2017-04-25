@@ -129,7 +129,14 @@ section .row {
 }
 
 .content-inner {
-  padding: 1em 4em;
+  text-align: center;
+  padding: 0;
+}
+.contact-content-inner {
+  text-align: center;
+  padding-top: 1em;
+  padding right: 4em;
+  padding bottom: 0em;
 }
 
 /* google map styles */
@@ -144,51 +151,20 @@ section .row {
   width: 100%;
 }
 
-/* desktop specific styles view */
-@media (min-width: 1024px) {
-  .banner-image-wrap {
-    /*max-height: 45vh;
-    height: 45vh;*/
-    overflow-y: hidden;
-  }
+.footer-message {
+  display: inline-block;
+}
 
-  .banner-image {
-    max-width: 100%;
-    min-width: 100%;
-    width: 100%;
-  }
-
-  .content-inner {
-    /*min-height: 55vh;
-    height: 55vh;
-    max-height: 55vh;*/
-    padding-top: 3.5em;
-    padding-bottom: 6em;
-  }
-
-  .content-inner a {
-    color: #F79520;
-  }
-
-  #map {
-    height: 30em;
-  }
-
-  .footer-message {
-    display: inline-block;
-    padding: 1em 0 0 11em;
-  }
-
-  .social-media {
-    display: inline-block;
-    padding: 1em 11em 0 0;
-    float: right;
-  }
+.social-media {
+  display: inline-block;
+  padding-left: 0;
 }
 
 /* footer */
 footer {
   height: 10em;
+  padding-top: 1.5em;
+  text-align: center;
 }
 
 .social-media a {
@@ -223,6 +199,54 @@ footer {
 }
 #youtube:hover {
   color: #cc181e;
+}
+
+/* desktop specific styles view */
+@media (min-width: 1024px) {
+  .banner-image-wrap {
+    overflow-y: hidden;
+  }
+
+  .banner-image {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .content-inner {
+    text-align: left;
+    padding-top: 3.5em;
+    padding-bottom: 6em;
+  }
+  .contact-content-inner {
+    text-align: left;
+    padding-top: 3.5em;
+    padding-bottom: 6em;
+  }
+
+  .content-inner a {
+    color: #F79520;
+  }
+  .contact-content-inner a {
+    color: #F79520;
+  }
+
+  #map {
+    height: 35em;
+  }
+
+  footer {
+    text-align: left;
+  }
+
+  .footer-message {
+    /*padding: 1.5em 0 0 11em;*/
+  }
+
+  .social-media {
+    /*padding: 1.5em 11em 0 0;*/
+    float: right;
+  }
 }
 
 /* styles for the nav to stick to the top of the view field */
