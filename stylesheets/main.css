@@ -1,6 +1,9 @@
 /* color palette
     orange: #F79520
     slate:  #485865
+    youtube: #cc181e
+    twitter: #4099ff
+    facebook: #4267b2
 */
 
 /* import font */
@@ -57,7 +60,12 @@ body {
 }
 
 /* hack in order to elimate whitespace on right side, related to bootstrap '.row' usage */
-.false {
+.nullify-bs-margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.nullify-bs-padding {
   padding-left: 0;
   padding-right: 0;
 }
@@ -128,7 +136,6 @@ section .row {
 #map {
   height: 25em;
   margin: 0;
-  margin-left: -15px;
   padding: 0;
 }
 
@@ -166,11 +173,56 @@ section .row {
   #map {
     height: 30em;
   }
+
+  .footer-message {
+    display: inline-block;
+    padding: 1em 0 0 11em;
+  }
+
+  .social-media {
+    display: inline-block;
+    padding: 1em 11em 0 0;
+    float: right;
+  }
 }
 
 /* footer */
 footer {
   height: 10em;
+}
+
+.social-media a {
+  color: inherit;
+  font-size: 2em;
+  padding-left: .5em;
+}
+
+#facebook {
+  transition: color 150ms;
+}
+#facebook:hover {
+  color: #4267b2;
+}
+
+#twitter {
+  transition: color 150ms;
+}
+#twitter:hover {
+  color: #4099ff;
+}
+
+#instagram {
+  transition: color 150ms;
+}
+#instagram:hover {
+  color: #c13584;
+}
+
+#youtube {
+  transition: color 150ms;
+}
+#youtube:hover {
+  color: #cc181e;
 }
 
 /* styles for the nav to stick to the top of the view field */
